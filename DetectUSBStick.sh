@@ -3,7 +3,7 @@
 # Script to detect if a user has left their USB stick in a computer on logout.
 # Lovingly stolen from https://jamfnation.jamfsoftware.com/discussion.html?id=5924
 
-# Implemented : r.purves@arts.ac.uk
+# Implemented : contact@richard-purves.com
 # Version 1.0 : 27-2-2013 - Initial Version
 
 for disk in $(diskutil list | awk '/disk[1-9]s/{ print $NF }' | grep -v /dev); do
